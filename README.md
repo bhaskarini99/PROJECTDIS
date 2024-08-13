@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git branch: 'index',
+                git branch: 'main',
                 url: 'https://github.com/bhaskarini99/PROJECTDIS.git'
                 echo " this clones the changes made in git"
             }
@@ -13,7 +13,7 @@ pipeline {
         stage ('pull') {
             steps {
                 bat "git pull https://github.com/bhaskarini99/PROJECTDIS.git"
-                bat "type dev1.txt"
+                bat "type README.md"
                 echo " this is github"
             }
         }
