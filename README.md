@@ -6,13 +6,13 @@ pipeline {
         stage('clone') {
             steps {
                 git branch: 'index',
-                url: 'https://github.com/bhaskarini99/settask1.git'
+                url: 'https://github.com/bhaskarini99/PROJECTDIS.git'
                 echo " this clones the changes made in git"
             }
         }
         stage ('pull') {
             steps {
-                bat "git pull https://github.com/bhaskarini99/settask1.git"
+                bat "git pull https://github.com/bhaskarini99/PROJECTDIS.git"
                 bat "type dev1.txt"
                 echo " this is github"
             }
